@@ -4,11 +4,11 @@ progAssignment <- function() {
 	library(dplyr)
 
 	# Configuration section (paths)
-	HAR_dataset <- "UCI HAR Dataset"
+	HAR_dataset 		<- "UCI HAR Dataset"
 	setwd(HAR_dataset)
-	working_dirs <- c("test/", "train/")
-	test_dir <- file.path(working_dirs[1], "/")
-	train_dir <-file.path(working_dirs[2], "/")
+	working_dirs 		<- c("test/", "train/")
+	test_dir 			<- file.path(working_dirs[1], "/")
+	train_dir 			<- file.path(working_dirs[2], "/")
 
 	# Functions
 	# Step 4 function
@@ -50,7 +50,7 @@ progAssignment <- function() {
 	preStep5 <- cbind(step3, allSubjects)
 
 	step5 <- aggregate(preStep5[,1:24], preStep5[,25:26], FUN=mean)
-	write.table(step5, file ="step5.txt")
+	write.table(step5, file ="step5.txt", row.name = FALSE)
 
 	setwd("..")
 
