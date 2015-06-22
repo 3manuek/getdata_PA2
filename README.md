@@ -9,6 +9,14 @@ run_analysis.R does:
     - Appropriately labels the data set with descriptive variable names. 
     - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+Returns:
+    Dataset (Step 1)
+
+How to execute:
+
+> source("run_analysis.R")
+> progAssignment()
+
 
 # Links
 
