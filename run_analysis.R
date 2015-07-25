@@ -50,13 +50,12 @@ progAssignment <- function() {
 	preStep5 <- cbind(step3, allSubjects)
 
 	step5 <- aggregate(preStep5[,1:24], preStep5[,25:26], FUN=mean)
-	write.table(step5, file ="step5.txt", row.name = FALSE)
 
 	setwd("..")
+	write.table(step5, file ="step5.txt", row.name = FALSE)
+
 
 	# Return:
 	dataset
 
 }
-
-
