@@ -11,10 +11,12 @@ run_analysis.R does:
 
 Returns:
     Dataset (Step 1)
+    "step5.txt" as a text file.
 
 How to execute:
 
 > source("run_analysis.R")
+>
 > progAssignment()
 
 
